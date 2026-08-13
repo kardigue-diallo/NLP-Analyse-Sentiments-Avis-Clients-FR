@@ -16,9 +16,9 @@ Ce projet implémente un pipeline complet de Traitement Automatique du Langage N
 * **Inférence Statistique & Règles Métier :** Classification par Régression Logistique couplée à un moteur de surcharge pour la détection explicite des négations (*ne, pas, jamais, aucun*).
 * **Explicabilité IA (XAI) :** Décomposition exacte du score pour chaque mot ($\text{Contribution} = \text{TF-IDF} \times \text{Poids}$) et visualisations interactives Plotly.
 * **Routage Métier Automatisé :**
-  * **Avis Négatif (Confiance $\ge 75\%$ )** $\rightarrow$ **Priorité Haute ** (Transfert support immédiat & alerte).
-  * **Avis Négatif (Confiance $< 75\%$ )** $\rightarrow$ **Priorité Moyenne ** (E-mail d'excuses automatique).
-  * **Avis Positif** $\rightarrow$ **Priorité Basse ** (Message de remerciement).
+  * **Avis Négatif (Confiance $\ge 75\%$)** $\rightarrow$ **Priorité Haute** (Transfert support immédiat & alerte).
+  * **Avis Négatif (Confiance $< 75\%$)** $\rightarrow$ **Priorité Moyenne** (E-mail d'excuses automatique).
+  * **Avis Positif** $\rightarrow$ **Priorité Basse** (Message de remerciement).
 * **Analyse en Lot (Batch CSV) & Export :** Traitement simultané de fichiers CSV et génération de reçus d'analyse horodatés au format `.txt`.
 * **Interface Web Streamlit :** Application interactive et intuitive pour le test d'inférence en temps réel.
 
