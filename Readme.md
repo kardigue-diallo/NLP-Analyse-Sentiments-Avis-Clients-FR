@@ -44,7 +44,6 @@ $$P(Y = 1 \mid X) = \frac{1}{1 + e^{-z}} \quad \text{où} \quad z = W_0 + \sum_{
 
 ### 1. Cloner le dépôt et accéder au dossier
 ```bash
-git clone 
 git clone https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git)
 cd NLP-Analyse-Sentiments-Avis-Clients-FR
 ```
@@ -92,4 +91,4 @@ python -m streamlit run app.py
 
 ## 👤 Auteur
 
-* **Cardique Diallo** - [GitHub Profile](https://github.com/kardigue-diallo)
+* **Kardigue Diallo** - [GitHub Profile](https://github.com/kardigue-diallo)
