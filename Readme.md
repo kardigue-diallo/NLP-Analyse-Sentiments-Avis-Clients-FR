@@ -4,7 +4,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/SCIKIT--LEARN-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/OPEN_IN-STREAMLIT-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://share.streamlit.io/)
 [![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)](LICENSE)
-🌐 [![Démo en ligne](https://img.shields.io/badge/DÉMO_EN_LIGNE-ST-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://nlp-analyse-sentiments.streamlit.app)
+[![Démo en ligne](https://img.shields.io/badge/DÉMO_EN_LIGNE-ST-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://nlp-analyse-sentiments.streamlit.app)
 
 Ce projet implémente un pipeline complet de Traitement Automatique du Langage Naturel (NLP) pour la classification des avis clients en français (Positif / Négatif), l'explicabilité IA des prédictions (XAI), et le routage automatisé des tickets de support selon le niveau de confiance du modèle.
 
