@@ -47,7 +47,7 @@ $$P(Y = 1 \mid X) = \frac{1}{1 + e^{-z}} \quad \text{où} \quad z = W_0 + \sum_{
 git clone [https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git](https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git)
 cd NLP-Analyse-Sentiments-Avis-Clients-FR
 
-## Architecture du Projet
+# Architecture du projet
 
 NLP-Analyse-Sentiments-Avis-Clients-FR/
 │
@@ -60,10 +60,3 @@ NLP-Analyse-Sentiments-Avis-Clients-FR/
 ├── requirements.txt                                   # Liste des dépendances Python
 └── README.md                                          # Documentation du projet
 
-# Sur Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Sur Linux / macOS
-python3 -m venv venv
-source venv/bin/activate
