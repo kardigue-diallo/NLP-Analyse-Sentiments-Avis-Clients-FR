@@ -11,15 +11,15 @@ Ce projet implémente un pipeline complet de Traitement Automatique du Langage N
 
 ## Fonctionnalités Principales
 
-* **Prétraitement Linguistique :** Nettoyage textuel avancé (regex, gestion des accents français, suppression de la ponctuation et stopwords).
+* **Prétraitement Linguistique :** Nettoyage textuel avancé (expressions régulières, gestion des accents français, suppression de la ponctuation et des mots vides).
 * **Vectorisation TF-IDF :** Conversion du texte brut en représentations matricielles pondérées (Unigrammes & Bigrammes).
-* **Inférence Statistique & Règles Métier :** Classification par Régression Logistique couplée à un moteur de surchage pour la détection explicite des négations (*ne, pas, jamais, aucun*).
+* **Inférence Statistique & Règles Métier :** Classification par Régression Logistique couplée à un moteur de surcharge pour la détection explicite des négations (*ne, pas, jamais, aucun*).
 * **Explicabilité IA (XAI) :** Décomposition exacte du score pour chaque mot ($\text{Contribution} = \text{TF-IDF} \times \text{Poids}$) et visualisations interactives Plotly.
 * **Routage Métier Automatisé :**
-  * **Avis Négatif (Confiance $\ge 75\%$)** $\rightarrow$ **Priorité Haute ** (Transfert support immédiat & alerte).
-  * **Avis Négatif (Confiance $< 75\%$)** $\rightarrow$ **Priorité Moyenne ** (E-mail d'excuses automatique).
+  * **Avis Négatif (Confiance $\ge 75\%$ )** $\rightarrow$ **Priorité Haute ** (Transfert support immédiat & alerte).
+  * **Avis Négatif (Confiance $< 75\%$ )** $\rightarrow$ **Priorité Moyenne ** (E-mail d'excuses automatique).
   * **Avis Positif** $\rightarrow$ **Priorité Basse ** (Message de remerciement).
-* **Analyse en Lot (Batch CSV) & Export :** Traitement simultané de fichiers CSV et génération de recus d'analyse horodatés au format `.txt`.
+* **Analyse en Lot (Batch CSV) & Export :** Traitement simultané de fichiers CSV et génération de reçus d'analyse horodatés au format `.txt`.
 * **Interface Web Streamlit :** Application interactive et intuitive pour le test d'inférence en temps réel.
 
 ---
@@ -47,25 +47,13 @@ $$P(Y = 1 \mid X) = \frac{1}{1 + e^{-z}} \quad \text{où} \quad z = W_0 + \sum_{
 git clone [https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git](https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git)
 cd NLP-Analyse-Sentiments-Avis-Clients-FR
 
-
 NLP-Analyse-Sentiments-Avis-Clients-FR/
 │
 ├── notebooks/
-│   └── nlp_analyse_sentiments.ipynb   # Notebook complet (EDA, Entraînement, Métriques)
+│   └── nlp-analyse-sentiments-avis-clients-fr.ipynb   # Notebook (EDA, Entraînement, Métriques)
 │
-├── app.py                             # Application Web Streamlit
-├── model.pkl                          # Modèle de Régression Logistique entraîné
-├── tfidf.pkl                          # Vectoriseur TF-IDF ajusté
-├── requirements.txt                   # Liste des dépendances Python
-└── README.md                          # Documentation du projet
-
-
-# Sur Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Sur Linux / macOS
-python3 -m venv venv
-source venv/bin/activate
-
-pip install -r requirements.txt
+├── app.py                                             # Application Web Streamlit
+├── model.pkl                                          # Modèle de Régression Logistique entraîné
+├── tfidf.pkl                                          # Vectoriseur TF-IDF ajusté
+├── requirements.txt                                   # Liste des dépendances Python
+└── README.md                                          # Documentation du projet
