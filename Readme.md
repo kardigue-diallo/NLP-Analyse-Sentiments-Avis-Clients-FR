@@ -47,10 +47,12 @@ $$P(Y = 1 \mid X) = \frac{1}{1 + e^{-z}} \quad \text{où} \quad z = W_0 + \sum_{
 git clone 
 git clone https://github.com/kardigue-diallo/NLP-Analyse-Sentiments-Avis-Clients-FR.git)
 cd NLP-Analyse-Sentiments-Avis-Clients-FR
+```
+
+---
 
 ### 2. Arborescence du Projet
 ```text
-
 NLP-Analyse-Sentiments-Avis-Clients-FR/
 │
 ├── notebooks/
@@ -61,7 +63,12 @@ NLP-Analyse-Sentiments-Avis-Clients-FR/
 ├── tfidf.pkl                                          # Vectoriseur TF-IDF ajusté
 ├── requirements.txt                                   # Liste des dépendances Python
 └── README.md                                          # Documentation du projet
+```
 
+---
+
+### 3. Créer et activer un environnement virtuel
+```bash
 # Sur Windows
 python -m venv venv
 venv\Scripts\activate
@@ -69,3 +76,20 @@ venv\Scripts\activate
 # Sur Linux / macOS
 python3 -m venv venv
 source venv/bin/activate
+```
+
+### 4. Installer les dépendances
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Lancer l'application Streamlit
+```bash
+python -m streamlit run app.py
+```
+
+---
+
+## 👤 Auteur
+
+* **Cardique Diallo** - [GitHub Profile](https://github.com/kardigue-diallo)
